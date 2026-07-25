@@ -1,0 +1,65 @@
+.hub-page {
+  background-color: var(--color-cream);
+  min-height: 100vh;
+}
+
+.hub-hero {
+  color: var(--color-cream);
+  padding: 12rem var(--spacing-lg) 8rem;
+  text-align: center;
+  background-color: var(--color-onyx);
+  border-bottom: var(--grid-border);
+}
+
+.hub-hero.crimson {
+  background-color: var(--color-crimson);
+}
+
+.hub-hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(4rem, 8vw, 7rem);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+  color: var(--color-cream) !important;
+}
+
+.hub-hero p {
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  color: rgba(246, 243, 237, 0.8);
+}
+
+.hub-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 8rem var(--spacing-lg) 10rem;
+}
+
+.hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 4rem;
+}
+
+.hub-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.hub-card h3 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-style: italic;
+  color: var(--color-onyx);
+  margin-bottom: 1rem;
+}
+
+.hub-card p {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: var(--color-onyx);
+}

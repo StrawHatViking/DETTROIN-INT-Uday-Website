@@ -26,7 +26,7 @@ export default function AcademicsPage() {
           <div className="apage-card">
             <h3>Junior School</h3>
               <div className="std-image-wrapper" style={{ marginTop: '1rem', marginBottom: '1.5rem' }}>
-                <img src="https://static.vasantvalley.org/wp-content/uploads/2021/04/learning-image-image.png" alt="Junior School" />
+                <img src="https://static.vasantvalley.org/wp-content/uploads/2026/07/20114458/laissez_faire_2026_4-1.jpeg" alt="Junior School" />
               </div>
             <p>The formative years are crucial. We focus on building a strong foundation in literacy and numeracy while encouraging creative expression, physical development, and social skills in a nurturing environment.</p>
           </div>

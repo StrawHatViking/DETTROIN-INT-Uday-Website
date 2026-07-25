@@ -13,7 +13,7 @@ export default function Leadership() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1 }}
           >
-            <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop" alt="Campus Architecture" />
+            <img src="https://static.vasantvalley.org/wp-content/uploads/2021/04/23153756/Arun-Kapur-1.jpg" alt="Arun Kapur" />
             <div className="ld-duotone-overlay"></div>
           </motion.div>
         </div>

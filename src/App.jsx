@@ -18,6 +18,9 @@ import SENPage from './pages/SENPage'
 import CEEPage from './pages/CEEPage'
 import FAQsPage from './pages/FAQsPage'
 import LoginPage from './pages/LoginPage'
+import InfrastructurePage from './pages/InfrastructurePage'
+import ProgrammesPage from './pages/ProgrammesPage'
+import NewsPage from './pages/NewsPage'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -62,6 +65,9 @@ function App() {
               <Route path="/cee" element={<CEEPage />} />
               <Route path="/faqs" element={<FAQsPage />} />
               <Route path="/login" element={<LoginPage />} />
+              <Route path="/infrastructure" element={<InfrastructurePage />} />
+              <Route path="/programmes" element={<ProgrammesPage />} />
+              <Route path="/news" element={<NewsPage />} />
             </Routes>
 
             <Footer />

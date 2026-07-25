@@ -12,8 +12,6 @@ export default function CEEPage() {
         <div className="std-grid">
           <div className="std-left">
             <h2>Advancing<br/>Pedagogy</h2>
-          </div>
-          <div className="std-right">
             <p className="std-lead">
               The Centre for Excellence in Education (CEE) is the research and development wing of Vasant Valley School.
             </p>
@@ -23,7 +21,9 @@ export default function CEEPage() {
             <p>
               Through workshops, seminars, and ongoing research projects, the CEE ensures that our educational practices remain at the forefront of global standards.
             </p>
-            <div className="std-image-wrapper">
+          </div>
+          <div className="std-right">
+            <div className="split-image-wrapper">
               <img src="https://www.vasantvalley.org/wp-content/themes/vasant/images/students.jpg" alt="Students Collaborative Work" />
             </div>
           </div>

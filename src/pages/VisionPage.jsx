@@ -12,8 +12,6 @@ export default function VisionPage() {
         <div className="std-grid">
           <div className="std-left">
             <h2>Our<br/>Vision</h2>
-          </div>
-          <div className="std-right">
             <p className="std-lead">
               To be a premier institution of learning that develops leaders who will shape the future with excellence and integrity.
             </p>
@@ -23,7 +21,9 @@ export default function VisionPage() {
             <p>
               Our educators are facilitators who guide students to discover their potential, pushing the boundaries of their understanding in a nurturing and inclusive environment.
             </p>
-            <div className="std-image-wrapper">
+          </div>
+          <div className="std-right">
+            <div className="split-image-wrapper">
               <img src="https://static.vasantvalley.org/wp-content/uploads/2021/04/image-vasant2.png" alt="Vasant Valley Building" />
             </div>
           </div>

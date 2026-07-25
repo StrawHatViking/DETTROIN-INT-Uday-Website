@@ -12,8 +12,6 @@ export default function SENPage() {
         <div className="std-grid">
           <div className="std-left">
             <h2>Inclusive<br/>Education</h2>
-          </div>
-          <div className="std-right">
             <p className="std-lead">
               Every child has the right to an education that meets their unique needs and abilities.
             </p>
@@ -23,8 +21,10 @@ export default function SENPage() {
             <p>
               Our team of specialized educators, counselors, and therapists work collaboratively with parents and teachers to develop individualized education plans (IEPs) that ensure academic and personal success.
             </p>
-            <div className="std-image-wrapper">
-              <img src="https://www.vasantvalley.org/wp-content/themes/vasant/images/learnig-center.png" alt="Learning Centre" />
+          </div>
+          <div className="std-right">
+            <div className="split-image-wrapper">
+              <img src="https://static.vasantvalley.org/wp-content/uploads/2026/07/20114506/laissez_faire_2026_7-1.jpeg" alt="Students Learning" />
             </div>
           </div>
         </div>
