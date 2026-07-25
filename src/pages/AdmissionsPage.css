@@ -1,0 +1,89 @@
+.page-admissions {
+  background-color: var(--color-cream);
+  min-height: 100vh;
+  padding-bottom: 8rem;
+}
+
+.ap-hero {
+  background-color: var(--color-crimson);
+  color: var(--color-cream);
+  padding: 12rem var(--spacing-lg) 8rem;
+  text-align: center;
+}
+
+.ap-hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  line-height: 1;
+}
+
+.ap-hero p {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.ap-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 6rem var(--spacing-lg) 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+}
+
+.ap-section h2 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--color-crimson);
+  margin-bottom: 2rem;
+  border-bottom: var(--grid-border);
+  padding-bottom: 1rem;
+}
+
+.ap-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ap-section li {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-onyx);
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.ap-section li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--color-crimson);
+}
+
+.ap-section strong {
+  font-weight: 700;
+  color: var(--color-crimson);
+}
+
+.ap-cta {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .ap-content {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}

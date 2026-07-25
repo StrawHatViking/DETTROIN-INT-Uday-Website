@@ -1,0 +1,134 @@
+.el-academics {
+  background-color: var(--color-cream);
+  padding: 10rem 0;
+  overflow: hidden;
+}
+
+.ea-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.ea-header {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.ea-header h2 {
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-style: italic;
+  font-weight: 500;
+  text-transform: none;
+  margin-bottom: 1.5rem;
+}
+
+.ea-header p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: rgba(10, 10, 10, 0.7);
+}
+
+.ea-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+}
+
+.ea-card {
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  position: relative;
+}
+
+.ea-card-reverse {
+  flex-direction: row-reverse;
+}
+
+.ea-number {
+  position: absolute;
+  font-size: 25vw;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  color: rgba(159, 6, 34, 0.04);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.ea-content {
+  flex: 1;
+  z-index: 1;
+}
+
+.ea-title {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 4vw, 4rem);
+  font-style: italic;
+  font-weight: 500;
+  color: var(--color-onyx);
+  margin-bottom: 2rem;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.ea-content p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: rgba(10, 10, 10, 0.7);
+}
+
+.ea-image-container {
+  flex: 1;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.ea-image-mask {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+.arch-mask {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 3/4;
+  clip-path: ellipse(70% 60% at 50% 40%);
+}
+
+.circle-mask {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.ea-image-mask img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(0.8) hue-rotate(320deg) saturate(1.5) contrast(1.1) brightness(0.9);
+}
+
+.ea-duotone-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: var(--color-crimson);
+  mix-blend-mode: multiply;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .ea-card, .ea-card-reverse {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}

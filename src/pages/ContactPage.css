@@ -1,0 +1,152 @@
+.page-contact {
+  background-color: var(--color-cream);
+  min-height: 100vh;
+  padding-bottom: 8rem;
+}
+
+.cp-hero {
+  background-color: var(--color-onyx);
+  color: var(--color-cream);
+  padding: 12rem var(--spacing-lg) 8rem;
+  text-align: center;
+}
+
+.cp-hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+}
+
+.cp-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 6rem var(--spacing-lg) 0;
+}
+
+.cp-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6rem;
+}
+
+.cp-block {
+  margin-bottom: 3rem;
+}
+
+.cp-block h4 {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+  color: var(--color-crimson);
+  margin-bottom: 1rem;
+}
+
+.cp-block p {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-onyx);
+}
+
+/* Form Styles */
+.cp-form-container {
+  background-color: #fff;
+  padding: 4rem;
+  border: var(--grid-border);
+}
+
+.cp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cp-input-group {
+  position: relative;
+  width: 100%;
+}
+
+.cp-input-group input,
+.cp-input-group textarea,
+.cp-input-group select {
+  width: 100%;
+  padding: 1rem 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(10, 10, 10, 0.2);
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  color: var(--color-onyx);
+  transition: border-color 0.3s ease;
+}
+
+.cp-input-group select {
+  cursor: pointer;
+  appearance: none;
+  border-radius: 0;
+}
+
+.cp-input-group input:focus,
+.cp-input-group textarea:focus,
+.cp-input-group select:focus {
+  outline: none;
+  border-bottom-color: var(--color-crimson);
+}
+
+.cp-input-group label {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  color: rgba(10, 10, 10, 0.5);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Floating Label Logic */
+.cp-input-group input:focus ~ label,
+.cp-input-group input:not(:placeholder-shown) ~ label,
+.cp-input-group textarea:focus ~ label,
+.cp-input-group textarea:not(:placeholder-shown) ~ label {
+  top: -1rem;
+  font-size: 0.8rem;
+  color: var(--color-crimson);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cp-submit-btn {
+  align-self: flex-start;
+  background-color: var(--color-crimson);
+  color: var(--color-cream);
+  border: none;
+  padding: 1.2rem 3rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  transition: background-color 0.3s ease;
+  cursor: none; /* Custom cursor takes over */
+  margin-top: 2rem;
+}
+
+.cp-submit-btn:hover {
+  background-color: var(--color-onyx);
+}
+
+@media (max-width: 1024px) {
+  .cp-grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .cp-form-container {
+    padding: 2rem;
+  }
+}

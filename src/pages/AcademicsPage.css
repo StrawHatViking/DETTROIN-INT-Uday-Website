@@ -1,0 +1,87 @@
+.page-academics {
+  background-color: var(--color-cream);
+  min-height: 100vh;
+  padding-bottom: 8rem;
+}
+
+.apage-hero {
+  background-color: var(--color-onyx);
+  color: var(--color-cream);
+  padding: 12rem var(--spacing-lg) 8rem;
+  text-align: center;
+}
+
+.apage-hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  line-height: 1;
+}
+
+.apage-hero p {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.apage-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 6rem var(--spacing-lg) 0;
+}
+
+.apage-intro {
+  max-width: 900px;
+  margin: 0 auto 6rem;
+  text-align: center;
+}
+
+.apage-intro p {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.4;
+  color: var(--color-onyx);
+  font-style: italic;
+}
+
+.apage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.apage-card {
+  padding: 3rem;
+  background-color: #fff;
+  border: var(--grid-border);
+  transition: transform 0.3s ease;
+}
+
+.apage-card:hover {
+  transform: translateY(-10px);
+}
+
+.apage-card h3 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-style: italic;
+  color: var(--color-crimson);
+  margin-bottom: 1.5rem;
+}
+
+.apage-card p {
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-onyx);
+}
+
+@media (max-width: 1024px) {
+  .apage-grid {
+    grid-template-columns: 1fr;
+  }
+}

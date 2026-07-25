@@ -1,0 +1,140 @@
+.mag-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  min-height: calc(100vh - 80px);
+  border-bottom: var(--grid-border);
+}
+
+.mag-hero-left {
+  display: flex;
+  flex-direction: column;
+  border-right: var(--grid-border);
+  padding: var(--spacing-lg);
+  position: relative;
+}
+
+.mag-hero-tagline {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-onyx);
+  margin-bottom: auto;
+}
+
+.divider {
+  width: 40px;
+  height: 1px;
+  background-color: var(--color-crimson);
+}
+
+.mag-hero-title {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(4rem, 8vw, 9rem);
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+  margin-bottom: auto;
+  overflow: hidden;
+}
+
+.word-block { display: block; }
+.word-block.italic {
+  font-style: italic;
+  font-weight: 500;
+  padding-left: 10%;
+}
+
+.mag-hero-bottom-left {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: end;
+  border-top: var(--grid-border);
+  padding-top: var(--spacing-md);
+  margin-top: 2rem;
+}
+
+.mag-hero-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.btn-magazine {
+  background-color: var(--color-crimson);
+  color: var(--color-cream);
+  border: none;
+  padding: 1.2rem 3rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.85rem;
+  transition: opacity 0.3s ease;
+  border-radius: 2px;
+}
+
+.btn-magazine:hover { opacity: 0.9; }
+
+.mag-hero-right {
+  display: flex;
+  position: relative;
+  background-color: var(--color-onyx);
+  padding: var(--spacing-md);
+}
+
+.mag-hero-image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.mag-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(20%) contrast(1.1);
+  transition: transform 10s ease;
+}
+
+.mag-hero-right:hover .mag-hero-img {
+  transform: scale(1.05);
+}
+
+.mag-hero-vertical-text {
+  position: absolute;
+  right: var(--spacing-sm);
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: var(--color-cream);
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  z-index: 2;
+  mix-blend-mode: difference;
+}
+
+@media (max-width: 1024px) {
+  .mag-hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 60vh;
+  }
+  .mag-hero-left {
+    border-right: none;
+    border-bottom: var(--grid-border);
+  }
+  .mag-hero-bottom-left {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 1.5rem;
+  }
+}

@@ -1,0 +1,40 @@
+.mag-nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  border-bottom: var(--grid-border);
+  min-height: 80px;
+}
+
+.mag-nav-left, .mag-nav-center, .mag-nav-right {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--spacing-md);
+}
+
+.mag-nav-left { border-right: var(--grid-border); }
+.mag-nav-right { border-left: var(--grid-border); justify-content: flex-end; }
+.mag-nav-center { justify-content: center; }
+
+.mag-brand {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-crimson);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-apply {
+  color: var(--color-crimson);
+  font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .mag-nav { grid-template-columns: 1fr 1fr; }
+  .mag-nav-center { display: none; }
+}

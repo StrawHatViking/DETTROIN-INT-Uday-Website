@@ -1,0 +1,64 @@
+.page-about {
+  background-color: var(--color-cream);
+  min-height: 100vh;
+  padding-bottom: 8rem;
+}
+
+.ab-hero {
+  background-color: var(--color-crimson);
+  color: var(--color-cream);
+  padding: 12rem var(--spacing-lg) 8rem;
+  text-align: center;
+}
+
+.ab-hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(4rem, 8vw, 8rem);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0;
+}
+
+.ab-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 8rem var(--spacing-lg) 0;
+}
+
+.ab-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6rem;
+}
+
+.ab-left h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 1.1;
+  font-style: italic;
+  color: var(--color-onyx);
+  margin-bottom: 2rem;
+}
+
+.ab-est {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  color: var(--color-crimson);
+  letter-spacing: 0.2em;
+}
+
+.ab-right p {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--color-onyx);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .ab-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

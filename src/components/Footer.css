@@ -1,0 +1,86 @@
+.el-footer {
+  background-color: var(--color-onyx);
+  color: var(--color-cream);
+  padding: 6rem 0 3rem 0;
+}
+
+.ef-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.ef-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 6rem;
+}
+
+.ef-brand h3 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--color-crimson);
+}
+
+.ef-brand p {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(239, 230, 213, 0.7);
+}
+
+.ef-links {
+  display: flex;
+  gap: 4rem;
+}
+
+.ef-links a {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: rgba(239, 230, 213, 0.7);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.ef-links a:hover {
+  color: var(--color-cream);
+}
+
+.ef-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: rgba(239, 230, 213, 0.4);
+  border-top: 1px solid rgba(239, 230, 213, 0.1);
+  padding-top: 2rem;
+}
+
+.ef-back-top {
+  color: var(--color-cream);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.ef-back-top:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .ef-content, .ef-bottom {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .ef-links {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

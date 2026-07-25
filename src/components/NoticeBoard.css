@@ -1,0 +1,54 @@
+.el-notice {
+  background-color: var(--color-cream);
+  padding: 8rem 0;
+  overflow: hidden;
+  position: relative;
+  border-bottom: var(--grid-border);
+}
+
+.en-header {
+  padding: 0 var(--spacing-lg) 4rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.en-header h2 {
+  font-size: 2rem;
+  color: var(--color-crimson);
+}
+
+.en-track-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.en-track {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  width: 200vw;
+}
+
+.en-track-solid {
+  color: var(--color-crimson);
+  font-style: italic;
+  font-family: var(--font-serif);
+}
+
+.en-item {
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 4rem;
+}
+
+.en-track-solid .en-item {
+  text-transform: none;
+}
+
+.en-separator {
+  color: var(--color-crimson);
+  font-size: 3rem;
+  font-family: var(--font-serif);
+}

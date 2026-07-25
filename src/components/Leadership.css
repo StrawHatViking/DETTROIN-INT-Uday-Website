@@ -1,0 +1,72 @@
+.el-leadership {
+  padding: 10rem 0;
+  background-color: var(--color-cream);
+  border-bottom: var(--grid-border);
+}
+
+.ld-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 8rem;
+  align-items: center;
+}
+
+.ld-image-mask {
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+.ld-image-mask img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(0.5) contrast(1.1);
+}
+
+.ld-duotone-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: var(--color-crimson);
+  mix-blend-mode: multiply;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.ld-quote {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  line-height: 1.2;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--color-onyx);
+  margin-bottom: 3rem;
+}
+
+.ld-author h3 {
+  font-family: var(--font-sans);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-crimson);
+  margin-bottom: 0.5rem;
+}
+
+.ld-author p {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: rgba(10, 10, 10, 0.6);
+}
+
+@media (max-width: 1024px) {
+  .ld-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}

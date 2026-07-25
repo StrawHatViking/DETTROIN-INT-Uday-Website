@@ -1,0 +1,21 @@
+.mag-marquee {
+  border-bottom: var(--grid-border);
+  padding: 1rem 0;
+  overflow: hidden;
+  background-color: var(--color-crimson);
+  color: var(--color-cream);
+}
+
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+}
+
+.marquee-content span {
+  padding: 0 2rem;
+}
