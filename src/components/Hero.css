@@ -81,6 +81,21 @@
 
 .btn-magazine:hover { opacity: 0.9; }
 
+@media (max-width: 768px) {
+  .mag-hero-left {
+    padding: 2rem var(--spacing-md);
+  }
+  .mag-hero-left h1 {
+    font-size: 3.5rem;
+  }
+  .mag-hero-left h2 {
+    font-size: 1.25rem;
+  }
+  .mag-hero-right {
+    display: none;
+  }
+}
+
 .mag-hero-right {
   display: flex;
   position: relative;

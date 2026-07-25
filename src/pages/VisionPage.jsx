@@ -24,7 +24,7 @@ export default function VisionPage() {
           </div>
           <div className="std-right">
             <div className="split-image-wrapper">
-              <img src="https://static.vasantvalley.org/wp-content/uploads/2021/04/image-vasant2.png" alt="Vasant Valley Building" />
+              <img src="https://static.vasantvalley.org/wp-content/uploads/2026/07/20114506/laissez_faire_2026_7-1.jpeg" alt="Students" />
             </div>
           </div>
         </div>

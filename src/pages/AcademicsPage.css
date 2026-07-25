@@ -86,3 +86,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .apage-card {
+    padding: 1.5rem;
+  }
+}

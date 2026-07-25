@@ -49,6 +49,18 @@
   flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .hub-hero {
+    padding: 6rem var(--spacing-md) 4rem;
+  }
+  .hub-content {
+    padding: 4rem var(--spacing-md) 6rem;
+  }
+  .hub-grid {
+    gap: 3rem;
+  }
+}
+
 .hub-card h3 {
   font-family: var(--font-serif);
   font-size: 2.5rem;

@@ -151,3 +151,12 @@
     padding: 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .cp-hero {
+    padding: 6rem var(--spacing-md) 4rem;
+  }
+  .cp-content {
+    padding-top: 4rem;
+  }
+}
