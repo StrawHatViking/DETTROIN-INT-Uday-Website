@@ -18,6 +18,7 @@
   font-weight: 500;
   margin-bottom: 1.5rem;
   line-height: 1;
+  color: var(--color-cream) !important;
 }
 
 .ap-hero p {

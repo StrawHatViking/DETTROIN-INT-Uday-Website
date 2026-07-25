@@ -13,6 +13,11 @@ import AdmissionsPage from './pages/AdmissionsPage'
 import AboutPage from './pages/AboutPage'
 import AcademicsPage from './pages/AcademicsPage'
 import ContactPage from './pages/ContactPage'
+import VisionPage from './pages/VisionPage'
+import SENPage from './pages/SENPage'
+import CEEPage from './pages/CEEPage'
+import FAQsPage from './pages/FAQsPage'
+import LoginPage from './pages/LoginPage'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -52,6 +57,11 @@ function App() {
               <Route path="/about" element={<AboutPage />} />
               <Route path="/academics" element={<AcademicsPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/vision" element={<VisionPage />} />
+              <Route path="/special-education" element={<SENPage />} />
+              <Route path="/cee" element={<CEEPage />} />
+              <Route path="/faqs" element={<FAQsPage />} />
+              <Route path="/login" element={<LoginPage />} />
             </Routes>
 
             <Footer />

@@ -1,19 +1,19 @@
-.page-contact {
+/* Reusable Standard Inner Page CSS */
+.std-page {
   background-color: var(--color-cream);
   min-height: 100vh;
   padding-bottom: 8rem;
 }
 
-.cp-hero {
-  background-color: var(--color-onyx);
+.std-hero {
   color: var(--color-cream);
   padding: 12rem var(--spacing-lg) 8rem;
   text-align: center;
 }
 
-.cp-hero h1 {
+.std-hero h1 {
   font-family: var(--font-serif);
-  font-size: clamp(4rem, 8vw, 8rem);
+  font-size: clamp(4rem, 8vw, 7rem);
   font-style: italic;
   font-weight: 500;
   line-height: 1;
@@ -21,59 +21,106 @@
   color: var(--color-cream) !important;
 }
 
-.cp-content {
+.std-content {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 6rem var(--spacing-lg) 0;
+  padding: 8rem var(--spacing-lg) 0;
 }
 
-.cp-grid {
+.std-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 6rem;
 }
 
-.cp-block {
-  margin-bottom: 3rem;
+.std-left h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 1.1;
+  font-style: italic;
+  color: var(--color-onyx);
+  margin-bottom: 2rem;
 }
 
-.cp-block h4 {
+.std-right p {
   font-family: var(--font-sans);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 0.9rem;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--color-onyx);
+  margin-bottom: 2rem;
+}
+
+.std-lead {
+  font-size: 1.5rem !important;
+  font-family: var(--font-sans) !important;
+  font-weight: 500;
+  color: var(--color-onyx) !important;
+  line-height: 1.6;
+}
+
+/* FAQ Styles */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.faq-item h3 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-style: italic;
   color: var(--color-crimson);
   margin-bottom: 1rem;
 }
 
-.cp-block p {
+.faq-item p {
   font-family: var(--font-sans);
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.6;
   color: var(--color-onyx);
 }
 
-/* Form Styles */
-.cp-form-container {
+/* Login Styles */
+.login-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--spacing-lg);
+  padding-top: 6rem;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.login-box {
   background-color: #fff;
   padding: 4rem;
   border: var(--grid-border);
+  text-align: center;
 }
 
-.cp-form {
+.login-box h2 {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--color-onyx);
+  margin-bottom: 3rem;
+}
+
+.login-form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.cp-input-group {
+.std-input {
   position: relative;
   width: 100%;
 }
 
-.cp-input-group input,
-.cp-input-group textarea,
-.cp-input-group select {
+.std-input input {
   width: 100%;
   padding: 1rem 0;
   background: transparent;
@@ -85,20 +132,12 @@
   transition: border-color 0.3s ease;
 }
 
-.cp-input-group select {
-  cursor: pointer;
-  appearance: none;
-  border-radius: 0;
-}
-
-.cp-input-group input:focus,
-.cp-input-group textarea:focus,
-.cp-input-group select:focus {
+.std-input input:focus {
   outline: none;
   border-bottom-color: var(--color-crimson);
 }
 
-.cp-input-group label {
+.std-input label {
   position: absolute;
   top: 1rem;
   left: 0;
@@ -109,11 +148,8 @@
   transition: all 0.3s ease;
 }
 
-/* Floating Label Logic */
-.cp-input-group input:focus ~ label,
-.cp-input-group input:not(:placeholder-shown) ~ label,
-.cp-input-group textarea:focus ~ label,
-.cp-input-group textarea:not(:placeholder-shown) ~ label {
+.std-input input:focus ~ label,
+.std-input input:not(:placeholder-shown) ~ label {
   top: -1rem;
   font-size: 0.8rem;
   color: var(--color-crimson);
@@ -122,32 +158,44 @@
   letter-spacing: 0.05em;
 }
 
-.cp-submit-btn {
-  align-self: flex-start;
+.login-btn {
   background-color: var(--color-crimson);
   color: var(--color-cream);
   border: none;
-  padding: 1.2rem 3rem;
+  padding: 1.2rem;
   font-family: var(--font-sans);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-size: 0.85rem;
   transition: background-color 0.3s ease;
-  cursor: none; /* Custom cursor takes over */
-  margin-top: 2rem;
+  cursor: none;
+  margin-top: 1rem;
 }
 
-.cp-submit-btn:hover {
+.login-btn:hover {
   background-color: var(--color-onyx);
 }
 
+.forgot-pwd {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--color-onyx);
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.forgot-pwd:hover {
+  opacity: 1;
+}
+
 @media (max-width: 1024px) {
-  .cp-grid {
+  .std-grid {
     grid-template-columns: 1fr;
-    gap: 4rem;
+    gap: 3rem;
   }
-  .cp-form-container {
+  .login-box {
     padding: 2rem;
   }
 }
