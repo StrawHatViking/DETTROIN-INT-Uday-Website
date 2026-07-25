@@ -13,7 +13,6 @@ export default function Leadership() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 1 }}
           >
-            {/* Using an impersonal architectural shot instead of a fake portrait */}
             <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop" alt="Campus Architecture" />
             <div className="ld-duotone-overlay"></div>
           </motion.div>

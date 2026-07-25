@@ -23,6 +23,9 @@ export default function SENPage() {
             <p>
               Our team of specialized educators, counselors, and therapists work collaboratively with parents and teachers to develop individualized education plans (IEPs) that ensure academic and personal success.
             </p>
+            <div className="std-image-wrapper">
+              <img src="https://www.vasantvalley.org/wp-content/themes/vasant/images/learnig-center.png" alt="Learning Centre" />
+            </div>
           </div>
         </div>
       </div>

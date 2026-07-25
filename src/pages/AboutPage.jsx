@@ -15,6 +15,7 @@ export default function AboutPage() {
       </div>
 
       <div className="ab-content">
+
         <div className="ab-grid">
           <div className="ab-left">
             <h2>Excellence<br/>In Deed</h2>
@@ -30,6 +31,9 @@ export default function AboutPage() {
             <p>
               We are dedicated to nurturing not just students, but future leaders who are equipped with the skills, values, and global perspective needed to thrive in a rapidly changing world. Our alumni network spans the globe, carrying forward the legacy of 'Excellence in Deed'.
             </p>
+            <div className="std-image-wrapper">
+              <img src="https://static.vasantvalley.org/wp-content/uploads/2021/04/image-vasant.png" alt="Vasant Valley" />
+            </div>
           </div>
         </div>
       </div>

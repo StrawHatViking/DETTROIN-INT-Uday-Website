@@ -23,6 +23,9 @@ export default function CEEPage() {
             <p>
               Through workshops, seminars, and ongoing research projects, the CEE ensures that our educational practices remain at the forefront of global standards.
             </p>
+            <div className="std-image-wrapper">
+              <img src="https://www.vasantvalley.org/wp-content/themes/vasant/images/students.jpg" alt="Students Collaborative Work" />
+            </div>
           </div>
         </div>
       </div>

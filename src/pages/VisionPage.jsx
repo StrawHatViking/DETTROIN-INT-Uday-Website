@@ -23,6 +23,9 @@ export default function VisionPage() {
             <p>
               Our educators are facilitators who guide students to discover their potential, pushing the boundaries of their understanding in a nurturing and inclusive environment.
             </p>
+            <div className="std-image-wrapper">
+              <img src="https://static.vasantvalley.org/wp-content/uploads/2021/04/image-vasant2.png" alt="Vasant Valley Building" />
+            </div>
           </div>
         </div>
       </div>

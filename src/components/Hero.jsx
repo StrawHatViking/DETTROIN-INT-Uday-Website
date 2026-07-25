@@ -44,7 +44,7 @@ export default function Hero() {
         <div className="mag-hero-image-wrapper">
           <img 
             src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2070&auto=format&fit=crop" 
-            alt="Academic Excellence" 
+            alt="Vasant Valley Campus"
             className="mag-hero-img"
           />
         </div>
