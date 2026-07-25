@@ -66,11 +66,10 @@
 .mag-hero {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  min-height: calc(100vh - 80px); /* subtract nav height */
+  min-height: calc(100vh - 80px);
   border-bottom: var(--grid-border);
 }
 
-/* Left Panel */
 .mag-hero-left {
   display: flex;
   flex-direction: column;
@@ -89,7 +88,7 @@
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--color-onyx);
-  margin-bottom: auto; /* Pushes title down */
+  margin-bottom: auto;
 }
 
 .divider {
@@ -101,10 +100,10 @@
 .mag-hero-title {
   display: flex;
   flex-direction: column;
-  font-size: clamp(5rem, 8vw, 9rem);
+  font-size: clamp(4rem, 8vw, 9rem);
   line-height: 0.9;
   letter-spacing: -0.02em;
-  margin-bottom: auto; /* Pushes bottom content down */
+  margin-bottom: auto;
 }
 
 .word-block {
@@ -133,7 +132,6 @@
   max-width: 400px;
 }
 
-/* Right Panel */
 .mag-hero-right {
   display: flex;
   position: relative;
@@ -177,7 +175,7 @@
 }
 
 /* ==========================================
-   MARQUEE SECTION (For visual flow)
+   MARQUEE SECTION
    ========================================== */
 .mag-marquee {
   border-bottom: var(--grid-border);
@@ -201,13 +199,106 @@
   padding: 0 2rem;
 }
 
-/* Responsive adjustments */
+/* ==========================================
+   PHASE 3: CINEMATIC PHILOSOPHY SECTION
+   ========================================== */
+.cinematic-philosophy {
+  border-bottom: var(--grid-border);
+  background-color: var(--color-cream);
+  overflow: hidden;
+}
+
+.cp-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 12rem var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cp-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 6vw, 6.5rem);
+  line-height: 1.1;
+  text-align: center;
+  color: var(--color-onyx);
+  margin-bottom: 8rem;
+  font-style: italic;
+  font-weight: 500;
+  text-transform: none;
+  max-width: 1200px;
+}
+
+.cp-image-wrapper {
+  width: 100%;
+  height: 80vh;
+  min-height: 600px;
+  overflow: hidden;
+  border: var(--grid-border);
+  margin-bottom: 8rem;
+  position: relative;
+}
+
+.cp-image-inner {
+  width: 100%;
+  height: 120%; /* Extra height for parallax travel */
+  position: absolute;
+  top: -10%;
+  left: 0;
+}
+
+.cp-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(10%) contrast(1.1);
+}
+
+.cp-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  width: 100%;
+}
+
+.cp-pillar {
+  display: flex;
+  flex-direction: column;
+}
+
+.cp-pillar-number {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-crimson);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: var(--grid-border);
+}
+
+.cp-pillar-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-onyx);
+}
+
+.cp-pillar-desc {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(10, 10, 10, 0.8);
+  font-family: var(--font-sans);
+}
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
 @media (max-width: 1024px) {
   .mag-nav {
     grid-template-columns: 1fr 1fr;
   }
   .mag-nav-center {
-    display: none; /* Hide links on tablet */
+    display: none;
   }
   
   .mag-hero {
@@ -224,5 +315,25 @@
     grid-template-columns: 1fr;
     justify-items: start;
     gap: 1.5rem;
+  }
+
+  /* Phase 3 Responsive */
+  .cp-container {
+    padding: 6rem var(--spacing-lg);
+  }
+
+  .cp-heading {
+    margin-bottom: 4rem;
+  }
+
+  .cp-image-wrapper {
+    height: 50vh;
+    min-height: 400px;
+    margin-bottom: 4rem;
+  }
+
+  .cp-pillars {
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
 }
