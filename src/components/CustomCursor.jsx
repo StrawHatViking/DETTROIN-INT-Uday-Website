@@ -35,8 +35,24 @@ export default function CustomCursor() {
   }, [])
 
   const cursorVariants = {
-    default: { x: mousePosition.x - 8, y: mousePosition.y - 8, height: 16, width: 16, backgroundColor: "var(--color-crimson)", mixBlendMode: "normal" },
-    hover: { x: mousePosition.x - 40, y: mousePosition.y - 40, height: 80, width: 80, backgroundColor: "var(--color-cream)", mixBlendMode: "difference" }
+    default: { 
+      x: mousePosition.x - 8, 
+      y: mousePosition.y - 8, 
+      height: 16, 
+      width: 16, 
+      backgroundColor: "var(--color-crimson)", 
+      mixBlendMode: "normal",
+      border: "1.5px solid var(--color-cream)" 
+    },
+    hover: { 
+      x: mousePosition.x - 40, 
+      y: mousePosition.y - 40, 
+      height: 80, 
+      width: 80, 
+      backgroundColor: "var(--color-cream)", 
+      mixBlendMode: "difference",
+      border: "none" 
+    }
   }
 
   return (
